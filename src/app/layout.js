@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
+        <header className="shadow">
           <div className="container mx-auto py-1 px-2">
             <div className="flex justify-between">
               <h1 className="font-bold text-2xl">Dokan</h1>
