@@ -1,15 +1,15 @@
 
-const Card = ({product}) => {
+const ProductCard = ({product}) => {
   return (
     <div>
       <h2>{product.name}</h2>
       <span> {product.brand}</span>
       <span> {product.category}</span>
-      <p> {product.price}</p>
+      <p>Rs.{product.price}</p>
       
     
     </div>
   )
 }
 
-export default Card;
+export default ProductCard;
