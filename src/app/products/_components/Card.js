@@ -1,7 +1,14 @@
 
-const Card = () => {
+const Card = ({product}) => {
   return (
-    <div>Card</div>
+    <div>
+      <h2>{product.name}</h2>
+      <span> {product.brand}</span>
+      <span> {product.category}</span>
+      <p> {product.price}</p>
+      
+    
+    </div>
   )
 }
 
