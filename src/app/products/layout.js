@@ -1,4 +1,4 @@
-const productsLayout = ({ children }) => {
+const ProductsLayout = ({ children }) => {
   return (
     <div>
         {children}
@@ -8,4 +8,4 @@ const productsLayout = ({ children }) => {
   );
 };
 
-export default productsLayout;
+export default ProductsLayout;
