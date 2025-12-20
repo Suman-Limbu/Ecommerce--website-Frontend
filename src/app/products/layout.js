@@ -2,7 +2,7 @@ const ProductsLayout = ({ children }) => {
   return (
     <div>
         {children}
-      Products
+      Products(Layout)
      
     </div>
   );
