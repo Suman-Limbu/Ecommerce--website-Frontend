@@ -2,7 +2,11 @@ const productId = async ({ params }) => {
   const productId = (await params).productId;
   const product = await fetch(
     `https://node-20250302.vercel.app/api/products/${productId}`
-  ).then((res) => res?.json());
+  )
+    .then((res) => res?.json())
+    .catch((error) => {
+      throw new Error("Failed to fetch product data");
+    });
 
   return (
     <div>
