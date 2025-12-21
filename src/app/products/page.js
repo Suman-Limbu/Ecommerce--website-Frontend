@@ -1,4 +1,8 @@
 import ProductCard from "./_components/Card";
+export const metadata={
+title:"Products",
+keywords:["products","laptops","mobiles"]
+}
 
 const products = async () => {
   const products = await fetch(

@@ -1,7 +1,8 @@
-const ProductCard = ({ product }) => {
+import Link from "next/link";
+const ProductCard = ({ product}) => {
   return (
     <div className="p-4 rounded-md shadow-md">
-      <h2 className="text-3xl font-bold">{product.name}</h2>
+      <h2 className="text-3xl font-bold"><Link href={`/products/${product.id}`}>{product.name}</Link></h2>
       <div className="flex items-center gap-2 py-2">
         <span className="bg-green-200 px-1 rounded-md"> {product.brand}</span>
         <span className="bg-blue-200 px-1 rounded-md"> {product.category}</span>
