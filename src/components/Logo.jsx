@@ -5,7 +5,7 @@ const Logo = () => {
   const { appName } = config;
   return (
     <Link href="/" className="text-xl">
-      <div className="flex items-center justify-start font-semibold hover:font-bold w-135">
+      <div className="flex items-center justify-start font-semibold hover:font-bold w-37">
         <span className="text-secondary">{appName}</span>
       </div>
     </Link>
