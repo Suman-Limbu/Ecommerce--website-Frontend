@@ -1,7 +1,11 @@
+import { config } from "@/config";
 import Link from "next/link";
 import "./globals.css";
 export const metadata = {
-  title: " Dokan",
+  title: {
+    default: config.appName,
+    template: `%s | ${config.appName}`,
+  },
   description: "A simple e-commerce website",
   keywords: ["e-commerce", "shopping", "online store"],
 };
