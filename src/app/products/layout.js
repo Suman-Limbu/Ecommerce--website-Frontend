@@ -1,11 +1,5 @@
 const ProductsLayout = ({ children }) => {
-  return (
-    <div>
-        {children}
-      Products(Layout)
-     
-    </div>
-  );
+  return <div>{children}</div>;
 };
 
 export default ProductsLayout;

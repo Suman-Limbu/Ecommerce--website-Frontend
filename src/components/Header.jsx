@@ -1,5 +1,6 @@
 import { LOGIN_ROUTE } from "@/constants/routes";
 import Link from "next/link";
+import { FaCartPlus } from "react-icons/fa";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 const Header = () => {
@@ -9,9 +10,10 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Logo />
           <NavMenu />
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-8">
             <div className="text-sm">
-              <i className="fa fa-shopping-cart" />
+              <FaCartPlus/>
+              
             </div>
             <Link href={LOGIN_ROUTE} className="text-sm text-secondary border-secondary border-2 rounded-3xl px-4 py-1 hover:bg-secondary hover:text-white transition">
               Login

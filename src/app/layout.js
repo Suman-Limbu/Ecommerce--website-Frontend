@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { config } from "@/config";
 import "./globals.css";
@@ -15,8 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header/>
-        {children}
-        <footer>This is footer</footer>
+        <main className="min-h-screen">{children}</main>
+        <Footer/>
       </body>
     </html>
   );
