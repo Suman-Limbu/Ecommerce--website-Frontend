@@ -1,3 +1,5 @@
+import { LOGIN_ROUTE } from "@/constants/routes";
+import Link from "next/link";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 const Header = () => {
@@ -11,9 +13,9 @@ const Header = () => {
             <div className="text-sm">
               <i className="fa fa-shopping-cart" />
             </div>
-            <button className="text-sm text-secondary border-secondary border-2 rounded-3xl px-4 py-1 hover:bg-secondary hover:text-white transition">
+            <Link href={LOGIN_ROUTE} className="text-sm text-secondary border-secondary border-2 rounded-3xl px-4 py-1 hover:bg-secondary hover:text-white transition">
               Login
-            </button>
+            </Link>
           </div>
         </div>
       </div>

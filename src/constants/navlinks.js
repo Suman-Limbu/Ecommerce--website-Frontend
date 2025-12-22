@@ -1,16 +1,31 @@
+import {
+  ABOUT_ROUTE,
+  BLOGS_ROUTE,
+  CONTACT_ROUTE,
+  HOME_ROUTE,
+  PRODUCTS_ROUTE,
+} from "./routes";
+
 const navLinks = [
   {
-    route: "/",
+    route: HOME_ROUTE,
     label: "Home",
   },
   {
-    route: "/about",
+    route: ABOUT_ROUTE,
     label: "About Us",
   },
-  { route: "/products", label: "Products" },
   {
-    route: "/contact",
-    label: "contacts",
+    route: PRODUCTS_ROUTE,
+    label: "Products",
+  },
+  {
+    route: BLOGS_ROUTE,
+    label: "Blogs",
+  },
+  {
+    route: CONTACT_ROUTE,
+    label: "Contact",
   },
 ];
 export default navLinks;
