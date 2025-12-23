@@ -3,7 +3,7 @@ import esewa from "@/assets/images/payments/esewa.svg";
 import fonepay from "@/assets/images/payments/fonepay.png";
 import khalti from "@/assets/images/payments/khalti.png";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaYoutube } from "react-icons/fa";
 import Logo from "./Logo";
 
 
@@ -54,25 +54,25 @@ const Footer = () => {
       <div>
         <h3 className="text-lg font-bold text-white mb-3">Contact Us</h3>
         <ul>
-          <li className="text-sm text-slate-300 mb-1">
-            <i className="fa fa-envelope" />
+          <li className="text-sm text-slate-300 mb-1 flex items-center">
+            <FaEnvelope/>
             <span className="ml-1">info@Dokan.com</span>
           </li>
-          <li className="text-sm text-slate-300 mb-1">
-            <i className="fa fa-map-marker-alt" />
+          <li className="text-sm text-slate-300 mb-1 flex items-center">
+           <FaMapMarkerAlt/>
             <span className="ml-1">birtamode, Nepal</span>
           </li>
-          <li className="text-sm text-slate-300 mb-1">
-            <i className="fa fa-phone" />
+          <li className="text-sm text-slate-300 mb-1 flex items-center">
+            <FaPhone/>
             <span className="ml-1">(+01) 4581618761</span>
           </li>
         </ul>
       </div>
     </div>
     <div className="flex flex-col md:flex-row items-center justify-between">
-      <p className="text-slate-400 text-sm">Copyright © 2025 ShopNest.</p>
+      <p className="text-slate-400 text-sm">Copyright © 2025 Dokan.</p>
       <div>
-        <a href="#" className="text-sm text-slate-400 hover:underline">Privary Policy</a>
+        <a href="#" className="text-sm text-slate-400 hover:underline">Privacy Policy</a>
         <a href="#" className="text-sm text-slate-400 hover:underline">Terms &amp; Conditions</a>
       </div>
     </div>
