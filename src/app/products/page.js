@@ -6,7 +6,7 @@ keywords:["products","laptops","mobiles"]
 
 const products = async () => {
   const products = await fetch(
-    `https://node-20250302.vercel.app/api/products`
+    `https://fakestoreapi.com/products`
   ).then((res) => res?.json());
 
   return (
